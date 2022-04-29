@@ -1,0 +1,19 @@
+{
+  "name": "weatherbot",
+  "version": "1.0.0",
+  "description": "bot that tracks the weather in the selected city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyOcheretenko/WeatherBot.git"
+  },
+  "author": "Sergey Ocheretenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergeyOcheretenko/WeatherBot/issues"
+  },
+  "homepage": "https://github.com/SergeyOcheretenko/WeatherBot#readme"
+}
