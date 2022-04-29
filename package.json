@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "bot that tracks the weather in the selected city",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node --experimental-json-modules index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/SergeyOcheretenko/WeatherBot/issues"
   },
-  "homepage": "https://github.com/SergeyOcheretenko/WeatherBot#readme"
+  "homepage": "https://github.com/SergeyOcheretenko/WeatherBot#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.4"
+  }
 }
