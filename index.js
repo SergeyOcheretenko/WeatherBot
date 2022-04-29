@@ -1,7 +1,11 @@
 import fetch from 'node-fetch';
-import config from './CONFIG.json' assert {type: "json"};
+import { Telegraf } from 'telegraf';
+import config from './CONFIG.json';
 
 const API_KEY = config.weather_api;
+const BOT_TOKEN = config.bot_token;
+
+const bot = new Telegraf(BOT_TOKEN);
 
 async function fetchWeather(city) {
     const api_url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=ua&units=metric`);
@@ -9,4 +13,6 @@ async function fetchWeather(city) {
     console.log(data);
 }
 
-fetchWeather('Kiev');
+bot.start(ctx => ctx.reply("I'm working"));
+
+bot.launch();
